@@ -1,0 +1,21 @@
+{
+  "name": "@ergodark/types",
+  "description": "Various utility and helper types that must be explicitly imported by a TypeScript project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ergodark/ts-types"
+  },
+  "version": "1.0.3",
+  "author": "Xunnamius",
+  "license": "Unlicense",
+  "main": "lib/rejoinder.js",
+  "keywords": [
+    "type",
+    "types",
+    "typescript",
+    "ergodark",
+    "ts",
+    "utility",
+    "helper"
+  ]
+}
