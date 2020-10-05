@@ -8,7 +8,6 @@
     "gitTag": true
   },
   "confirm": true,
-  "publishTag": "latest",
   "prePublishScript": false,
   "postPublishScript": false,
   "publishCommand": "npm publish"
