@@ -1,5 +1,5 @@
 [![npm
-version](https://badge.fury.io/js/@ergodark/types.svg)](https://badge.fury.io/js/@ergodark/types)
+version](https://badge.fury.io/js/%40ergodark%2Ftypes.svg)](https://badge.fury.io/js/%40ergodark%2Ftypes)
 
 # @ergodark/types
 

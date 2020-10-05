@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/ergodark/ts-types"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Xunnamius",
   "license": "Unlicense",
   "main": "lib/rejoinder.js",
