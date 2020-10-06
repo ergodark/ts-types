@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // * Several of these types were inspired by tsdef:
 // * https://github.com/joonhocho/tsdef/blob/master/src/index.ts
 
@@ -26,15 +27,15 @@ export type DeepPartial<T> = {
 export type AnyKey = string | number | symbol;
 
 // Matches any function
-export type AnyFunction = (...args: unknown[]) => unknown;
+export type AnyFunction = (...args: any[]) => any;
 
 // Matches any constructor
-export type AnyConstructor = new (...args: unknown[]) => unknown;
+export type AnyConstructor = new (...args: any[]) => any;
 
 // Matches any class
 export interface AnyClass {
-    prototype: unknown,
-    new (...args: unknown[]): unknown
+    prototype: any,
+    new (...args: any[]): any
 }
 
 // Sugar for Record<string, unknown>
