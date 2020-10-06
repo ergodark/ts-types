@@ -44,6 +44,7 @@ This library provides the following types:
 + [AnyClass](#anyclass)
 + [AnyRecord](#anyrecord)
 + [Awaited&lt;T&gt;](#awaitedt)
++ [HttpStatusCode](#httpstatuscode)
 
 ### Primitive
 
@@ -176,6 +177,19 @@ const p2 = new Promise<typeof p1>(resolve => resolve(p1));
 
 // Type of `p2` is Promise<Promise<boolean>> ...
 let result: Awaited<typeof p2>; // <== However, type of `result` is boolean
+```
+
+### HttpStatusCode
+
+Represents any valid (and a few invalid) [HTTP status
+code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+```TypeScript
+import fetch from 'isomorphic-unfetch'
+import type { HttpStatusCode } from '@ergodark/types'
+
+const res = await fetch('https://google.com');
+const status: HttpStatusCode = res.status;
 ```
 
 ## Contributing
