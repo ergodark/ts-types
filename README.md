@@ -3,10 +3,10 @@ version](https://badge.fury.io/js/%40ergodark%2Ftypes.svg)](https://badge.fury.i
 
 # @ergodark/types
 
-This package contains various utility and helper types that must be explicitly
-imported by a TypeScript project. This package is meant to be consumed by
-TypeScript projects only. As such, there is no `dist/`, `tsconfig.json`, or JS
-interop included.
+This package contains various utility and helper types that can be imported by a
+TypeScript project.
+
+This package only contains TypeScript types.
 
 ## Install
 
@@ -183,8 +183,7 @@ let result: Awaited<typeof p2>; // <== However, type of `result` is boolean
 Issues and pull requests are welcome! In lieu of a formal styleguide, take care
 to maintain the existing coding style.
 
-Add unit tests for any new or changed functionality where applicable. Lint and
-test your code.
+Please test your code!
 
 ## Release History
 

@@ -35,7 +35,7 @@ export type AnyConstructor = new (...args: unknown[]) => unknown;
 export interface AnyClass {
     prototype: unknown,
     new (...args: unknown[]): unknown
-};
+}
 
 // Sugar for Record<string, unknown>
 export type AnyRecord = Record<string, unknown>;
