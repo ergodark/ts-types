@@ -1,6 +1,6 @@
 {
   "name": "@ergodark/types",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Various utility and helper types for TypeScript projects",
   "keywords": [
     "type",
