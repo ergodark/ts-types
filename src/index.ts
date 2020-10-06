@@ -47,3 +47,7 @@ export type Awaited<T> = T extends PromiseLike<infer U>
 // TODO: enable this instead of the above when typescript 4.1 is out
 //export type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T;
 // TODO:
+
+// ? Export something so the generated file is not empty (eslint complains on
+// ? import)
+export const __typed = true;
