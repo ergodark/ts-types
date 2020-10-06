@@ -1,6 +1,6 @@
 {
   "name": "@ergodark/types",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Various utility and helper types for TypeScript projects",
   "keywords": [
     "type",
@@ -18,6 +18,8 @@
   "license": "Unlicense",
   "author": "Xunnamius",
   "sideEffects": false,
+  "main": "dist/modules/index.js",
+  "module": "dist/modules/index.js",
   "types": "dist/modules/index.d.ts",
   "files": [
     "/dist",
