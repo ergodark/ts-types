@@ -27,15 +27,15 @@ export type DeepPartial<T> = {
 export type AnyKey = string | number | symbol;
 
 // Matches any function
-export type AnyFunction = (...args: any[]) => any;
+export type AnyFunction = (...args: any[]) => unknown;
 
 // Matches any constructor
-export type AnyConstructor = new (...args: any[]) => any;
+export type AnyConstructor = new (...args: any[]) => unknown;
 
 // Matches any class
 export interface AnyClass {
-    prototype: any,
-    new (...args: any[]): any
+    prototype: unknown,
+    new (...args: any[]): unknown
 }
 
 // Sugar for Record<string, unknown>
