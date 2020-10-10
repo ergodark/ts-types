@@ -60,3 +60,6 @@ export type HttpStatusCode =
     | 496 | 497 | 499
 
     | 500 | 501 | 502 | 503 | 504 | 505 | 506 | 507 | 508 | 509 | 510 | 511 | 555 | 598 | 599;
+
+export type SuccessJson = Record<string, unknown> & { success: true };
+export type ErrorJson = Record<string, unknown> & { error: string, success: false };

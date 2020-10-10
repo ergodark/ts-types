@@ -1,6 +1,6 @@
 {
   "name": "@ergodark/types",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Various utility and helper types for TypeScript projects",
   "keywords": [
     "type",
@@ -32,8 +32,9 @@
     "check-types": "command -v unbuffer >/dev/null && (unbuffer tsc; unbuffer eslint .) | less -R -FX || (tsc; eslint .)",
     "clean": "rm -rf dist",
     "list-tasks": "npm run",
-    "prepublishOnly": "npm test && npm run build && test -r dist/modules/index.d.ts",
+    "prepublishOnly": "npm run build",
     "postpublish": "npm run clean",
+    "publishGuard": "npx sort-package-json && npm run check-types",
     "repl": "command -v rlwrap >/dev/null && rlwrap npx -p @babel/core -p @babel/node babel-node",
     "test": "npm run check-types"
   },

@@ -1,9 +1,6 @@
-const restrictedGlobals = require('confusing-browser-globals');
-
 module.exports = {
     parser: '@typescript-eslint/parser',
     plugins: [
-        'jest',
         '@typescript-eslint',
         'import'
     ],
@@ -26,18 +23,13 @@ module.exports = {
     },
     env: {
         es6: true,
-        node: true,
-        jest: true,
-        'jest/globals': true,
-        browser: true,
-        webextensions: true,
+        node: true
     },
     rules: {
         'no-console': 'warn',
         'no-return-await': 'warn',
         'no-await-in-loop': 'warn',
         'import/no-unresolved': ['error', { commonjs: true }],
-        'no-restricted-globals': ['warn'].concat(restrictedGlobals),
         'no-extra-boolean-cast': 'off',
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
@@ -62,19 +54,6 @@ module.exports = {
             // ? Already handled by vscode
             '@typescript-eslint/no-unused-vars': 'off',
         }
-    }, {
-        files: ['*.test.*'],
-        extends: [
-            'plugin:jest/all',
-            'plugin:jest/style',
-        ],
-        rules: {
-            'jest/lowercase': 'off',
-            'jest/consistent-test-it': 'off',
-            'jest/require-top-level-describe': 'off',
-            'jest/valid-describe': 'off',
-            'jest/no-hooks': 'off',
-        }
     }],
     settings: {
         'import/extensions': [
@@ -90,5 +69,5 @@ module.exports = {
             '.*/node_modules/.*'
         ]
     },
-    ignorePatterns: ['coverage']
+    ignorePatterns: ['coverage', 'dist']
 };
