@@ -14,6 +14,11 @@ export type Primitive =
 export type Falsy = false | '' | 0 | null | undefined;
 export type Nullish = null | undefined;
 
+// RFC JSON string can be legally parsed into any of the following types. In
+// other words, this is the return value of `JSON.parse()`. See:
+// https://stackoverflow.com/questions/5034444/can-json-start-with
+export type SerializedValue = Record<string, unknown> | unknown[] | number | string | boolean | null;
+
 // Make all properties optional recursively including nested objects. Keep in
 // mind that this should be used on json / plain objects only. Otherwise, it
 // will make class methods optional as well.
