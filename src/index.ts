@@ -46,6 +46,9 @@ export interface AnyClass {
 // Sugar for Record<string, unknown>
 export type AnyRecord = Record<string, unknown>;
 
+// Sugar for async and non-async return type
+export type AnyVoid = Promise<void> | void;
+
 // TODO:
 export type Awaited<T> = T extends PromiseLike<infer U>
   ? { 0: Awaited<U>; 1: U }[T extends PromiseLike<unknown> ? 0 : 1]
@@ -67,4 +70,4 @@ export type HttpStatusCode =
     | 500 | 501 | 502 | 503 | 504 | 505 | 506 | 507 | 508 | 509 | 510 | 511 | 555 | 598 | 599;
 
 export type SuccessJson = Record<string, unknown> & { success: true };
-export type ErrorJson = Record<string, unknown> & { error: string, success: false };
+export type ErrorJson = Record<string, unknown> & { message: string, success: false };
