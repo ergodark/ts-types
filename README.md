@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This package has been superseded by [`@xunnamius/types`](https://github.com/Xunnamius/typescript-utils). Use this instead.
+
 [![npm
 version](https://badge.fury.io/js/%40ergodark%2Ftypes.svg)](https://badge.fury.io/js/%40ergodark%2Ftypes)
 
